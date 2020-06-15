@@ -1,0 +1,81 @@
+.wpcf7-submit {
+   border-top: 1px solid #b64233;
+   background: #802416;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ab3224), to(#802416));
+   background: -moz-linear-gradient(top, #ab3224, #802416);
+   padding: 5px 10px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 14px;
+   text-decoration: none;
+   vertical-align: middle;
+}
+.wpcf7-submit:hover {
+   border-top-color: #d33a23;
+   background: #d33a23;
+   color: #ffffff;
+}
+.wpcf7-submit:active {
+   border-top-color: #802416;
+   background: #802416;
+}
+div.wpcf7-mail-sent-ok {
+	background: #398f14;
+	color:#FFF;
+	border:none;
+	padding: 6px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+
+div.wpcf7-mail-sent-ng {
+	background: #ff0000;
+	border:none;
+	padding: 6px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+
+div.wpcf7-spam-blocked {
+	background: #ffa500;
+	border:none;
+	padding: 6px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+
+div.wpcf7-validation-errors {
+	background: #f7e700;
+	border:none;
+	padding: 6px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+span.wpcf7-not-valid-tip {
+	position: absolute;
+	top: 0px;
+	left: 102%;
+	z-index: 9999;
+	background: #802416;
+	border:none;
+	color:#FFF;
+	font-size: 10pt;
+	width: 280px;
+	padding: 6px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+span.wpcf7-not-valid-tip:before {
+	content: "\00AB \0020";
+}

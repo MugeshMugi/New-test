@@ -1,0 +1,1065 @@
+/*
+Theme Name: Schiller Pianos
+Theme URI: 
+Description: 
+Version: 1.0
+Author:
+Author URI:
+Tags: 
+*/
+
+
+@import "css/typography.css";
+@import "css/layout.css";
+
+/*
++--------------------------------------------------------------------------
+|	CSS Reset
++--------------------------------------------------------------------------
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	outline: none;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+strong {
+	font-weight:bold;
+}
+em {
+	font-style:italic;
+}
+
+/*
++--------------------------------------------------------------------------
+|	@font-face
++--------------------------------------------------------------------------
+*/
+@font-face {
+	font-family: 'TeXGyreAdventorRegular';
+	src: url('fonts/texgyreadventor-regular-webfont.eot');
+	src: local('☺'), url('fonts/texgyreadventor-regular-webfont.woff') format('woff'), url('fonts/texgyreadventor-regular-webfont.ttf') format('truetype'), url('fonts/texgyreadventor-regular-webfont.svg#webfontVNQ4fiYu') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TeXGyreAdventorItalic';
+	src: url('fonts/texgyreadventor-italic-webfont.eot');
+	src: local('☺'), url('fonts/texgyreadventor-italic-webfont.woff') format('woff'), url('fonts/texgyreadventor-italic-webfont.ttf') format('truetype'), url('fonts/texgyreadventor-italic-webfont.svg#webfontT2RgH7m3') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TeXGyreAdventorBold';
+	src: url('fonts/texgyreadventor-bold-webfont.eot');
+	src: local('☺'), url('fonts/texgyreadventor-bold-webfont.woff') format('woff'), url('fonts/texgyreadventor-bold-webfont.ttf') format('truetype'), url('fonts/texgyreadventor-bold-webfont.svg#webfont5xaUGbMa') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TeXGyreAdventorBoldItalic';
+	src: url('fonts/texgyreadventor-bolditalic-webfont.eot');
+	src: local('☺'), url('fonts/texgyreadventor-bolditalic-webfont.woff') format('woff'), url('fonts/texgyreadventor-bolditalic-webfont.ttf') format('truetype'), url('fonts/texgyreadventor-bolditalic-webfont.svg#webfontNpLiKCmY') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+* {
+	padding: 0;
+	margin: 0;
+}
+html {
+	height: 100%;
+}
+body {
+	color:#000;
+	font:normal 14px 'TeXGyreAdventorRegular', Helvetica, Geneva, sans-serif;
+	line-height:15px;
+	height: 100%;
+}
+#wrapper {
+	color:#000
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -75px;
+}
+
+/*
++--------------------------------------------------------------------------
+|	header
++--------------------------------------------------------------------------
+*/
+#header {
+	background:url(images/header_bg.png) left top repeat-x;
+	height: 176px;
+	color: #FFF;
+	padding: 0;
+	margin: 0px 0px 0px 0px;
+}
+#cities {
+	background:url(images/cities.png) left top repeat-x;
+	width:100%;
+	height:16px;
+	position:absolute;
+	top:156px;
+	z-index:999;
+}
+
+/*
++--------------------------------------------------------------------------
+|	logo
++--------------------------------------------------------------------------
+*/
+.logo_container {
+	width:214px;
+	height:100px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.logo {
+	position:relative; 
+    top:20px;
+	background:url(images/logo.png) 0 0 no-repeat;
+	width:214px;
+	height:100px;
+	z-index:99;
+}
+.logo:hover {
+	background-position:0 -100px;
+}
+
+
+/*
++--------------------------------------------------------------------------
+|	navigation
++--------------------------------------------------------------------------
+*/
+.navigation {
+	width: 960px;
+	position:absolute;
+	top:70px;
+	left:50%;
+	margin-left:-480px;
+	padding: 0;
+	font:normal 15px 'TeXGyreAdventorRegular', Helvetica, Geneva, sans-serif;
+	text-transform:uppercase;
+}
+.navigation ul.the_left_menu {
+	padding:0;
+	width:350px;
+	list-style-type: none;
+	text-align: center;
+	float:left;
+}
+.navigation ul.the_right_menu {
+	padding:0;
+	width:350px;
+	list-style-type: none;
+	text-align: center;
+	float:right;
+}
+.navigation ul li {
+	display: inline;
+	list-style-type: none;
+	margin: 0 0 0 4px;
+	padding:0;
+}
+.navigation ul li a {
+	text-decoration: none;
+	padding: 0px 10px 5px 5px;
+	margin:0;
+	background:none;
+	color:#333;
+	text-decoration:none;
+
+}
+.navigation ul li a:hover {
+	background:url(images/nav_arrow_up.png) center bottom no-repeat;
+	color:#802416;
+	text-decoration:none;
+}
+/*.navigation ul li a.current {
+	color:#000;
+	text-decoration:none;
+}*/
+
+/*
++--------------------------------------------------------------------------
+|	content
++--------------------------------------------------------------------------
+*/
+#content {
+	width: 960px;
+	color: #FFF;
+	background: #000 ;
+	position:relative;
+	left:50%;
+	margin-bottom:10px;
+	margin-left:-480px;
+	margin-top:10px;
+	padding: 0px;
+	float:left;
+}
+#content p {
+	margin:0 0 10px 0;
+}
+#content a {
+	color:#FFF;
+	text-decoration:underline;
+}
+#content a:hover {
+	color:#FFF;
+	text-decoration:none;
+}
+
+/*
++--------------------------------------------------------------------------
+|	page
++--------------------------------------------------------------------------
+*/ 
+#content #page {
+	color:#000;
+	float:left;
+	clear:both;
+	margin-bottom:10px;
+}
+
+/*
++--------------------------------------------------------------------------
+|	header tags (h1, h2, h3, h4, h5), no real need for h6
++--------------------------------------------------------------------------
+*/
+h1 {
+	background:url(images/h1_bg.png) left top no-repeat;
+	width:960px;
+	height:59px;
+	font:normal 34px 'TeXGyreAdventorBold', Helvetica, Geneva, sans-serif;
+	margin-bottom:10px;
+	padding-left:5px;
+	text-transform:uppercase;
+	clear:both;
+}
+h2 {
+	background:url(images/h2_bg.png) left top no-repeat;
+	width:960px;
+	height:44px;
+	font:normal 28px 'TeXGyreAdventorBold', Helvetica, Geneva, sans-serif;
+	margin-bottom:10px;
+	padding-left:5px;
+	text-transform:uppercase;
+	clear:both;
+}
+h3 {
+	background:url(images/h3_bg.png) left top no-repeat;
+	width:960px;
+	height:33px;
+	font:normal 21px 'TeXGyreAdventorBold', Helvetica, Geneva, sans-serif;
+	margin-bottom:10px;
+	padding-left:5px;
+	text-transform:uppercase;
+	clear:both;
+}
+h4 {
+	background:url(images/h4_bg.png) left top no-repeat;
+	width:960px;
+	height:27px;
+	font:normal 16px 'TeXGyreAdventorBold', Helvetica, Geneva, sans-serif;
+	margin-bottom:10px;
+	padding-left:5px;
+	text-transform:uppercase;
+	clear:both;
+}
+h5 {
+	background:url(images/h5_bg.png) left top no-repeat;
+	width:960px;
+	height:22px;
+	font:normal 12px 'TeXGyreAdventorBold', Helvetica, Geneva, sans-serif;
+	margin-bottom:10px;
+	padding-left:5px;
+	text-transform:uppercase;
+	clear:both;
+}
+#content h3.video {
+	background:none;
+	color:#FFF;
+	width:auto;
+	height:auto;
+	font:normal 30px 'TeXGyreAdventorBold', Helvetica, Geneva, sans-serif;
+	margin:0 0 10px 0;
+	padding:0;
+	text-transform:none;
+	clear:both;
+}
+#content #page h1 {
+	background:none;
+	width:auto;
+	height:auto;
+	font:normal 30px 'TeXGyreAdventorBold', Helvetica, Geneva, sans-serif;
+	margin:0 0 10px 0;
+	padding:0;
+	text-transform:none;
+	clear:both;
+}
+#content #page h2 {
+	background:none;
+	width:auto;
+	height:auto;
+	font:normal 25px 'TeXGyreAdventorBold', Helvetica, Geneva, sans-serif;
+	margin:0 0 10px 0;
+	padding:0;
+	text-transform:none;
+	clear:both;
+}
+#content #page h2.finish {
+	background:none;
+	border-bottom:1px solid #666;
+	width:auto;
+	height:auto;
+	font:normal 25px 'TeXGyreAdventorBold', Helvetica, Geneva, sans-serif;
+	margin:0 0 10px 0;
+	padding:0;
+	text-transform:none;
+	clear:both;
+}
+#content #page h3 {
+	background:none;
+	width:auto;
+	height:auto;
+	font:normal 20px 'TeXGyreAdventorBold', Helvetica, Geneva, sans-serif;
+	margin:0 0 10px 0;
+	padding:0;
+	text-transform:none;
+	clear:both;
+}
+#content #page h4 {
+	background:none;
+	width:auto;
+	height:auto;
+	font:normal 17px 'TeXGyreAdventorBold', Helvetica, Geneva, sans-serif;
+	margin:0 0 10px 0;
+	padding:0;
+	text-transform:none;
+	clear:both;
+}
+#content #page h5 {
+	background:none;
+	width:auto;
+	height:auto;
+	font:normal 14px 'TeXGyreAdventorBold', Helvetica, Geneva, sans-serif;
+	margin:0 0 10px 0;
+	padding:0;
+	text-transform:none;
+	clear:both;
+}
+#content #page ul li {
+	font-size:13px;
+	padding:0 0 5px 0;
+	margin:0 0 2px 10px;
+	line-height: 13px; /* Required for cross-browser consistency; cross-browser defaults vary. */
+	list-style:url(images/grey_arrow.png) inside;
+}
+
+/*
++--------------------------------------------------------------------------
+|	content columns (for homepage)
++--------------------------------------------------------------------------
+*/ 
+#content .columns { margin:10px 0 0 0; clear:both; }
+#content .columns a {
+	color:#FFF;
+}
+#content .columns p {
+	display:block;
+	margin:0 0 10px 0;
+}
+#content .columns p a {
+	float:right;
+}
+#content .columns p a.more {
+	font-weight:bold;
+}
+#content .columns a:hover {
+	color:#CCC;
+}
+#content .columns .col_left {
+	float: left;
+	width: 340px;
+	height:300px;
+	margin: 0;
+	padding: 4px;
+}
+#content .columns .col_left h1 {
+	color:#FFF;
+	background:url(images/col_left_bg.png) left top no-repeat;
+	width:340px;
+	height:59px;
+	font:normal 34px 'TeXGyreAdventorBold', Helvetica, Geneva, sans-serif;
+	margin-bottom:10px;
+	padding-left:5px;
+	text-transform:uppercase;
+	clear:both;
+}
+#content .columns .col_left a {
+	text-transform:uppercase;
+}
+#content .columns .col_mid {
+	float: left;
+	width: 280px;
+	height:300px;
+	margin:0 10px 0 10px;
+	padding: 0;
+}
+#content .columns .col_mid h1 {
+	color:#FFF;
+	background:url(images/col_mid_bg.png) left top no-repeat;
+	width:340px;
+	height:59px;
+	font:normal 34px 'TeXGyreAdventorBold', Helvetica, Geneva, sans-serif;
+	margin-bottom:10px;
+	padding-left:5px;
+	text-transform:uppercase;
+	clear:both;
+}
+#content .columns .col_mid a {
+	text-transform:uppercase;
+}
+#content .columns .col_mid div.title {
+	text-transform:uppercase;
+	font-weight:bold;
+	margin:0 0 5px 0;
+}
+#content .columns .col_right {
+	float: left;
+	width: 300px;
+	height:300px;
+	padding: 0;
+	margin: 0;
+}
+#content .columns .col_right h1 {
+	color:#FFF;
+	background:url(images/col_right_bg.png) left top no-repeat;
+	width:320px;
+	height:59px;
+	font:normal 34px 'TeXGyreAdventorBold', Helvetica, Geneva, sans-serif;
+	margin-bottom:10px;
+	padding-left:5px;
+	text-transform:uppercase;
+	clear:both;
+}
+#content .columns .col_right ul li {
+	font-size:13px;
+	padding:0 0 5px 0;
+	margin:0 0 2px 10px;
+	line-height: 13px; /* Required for cross-browser consistency; cross-browser defaults vary. */
+	list-style:none;
+}
+#content .columns .col_right ul li:before {
+	content: "\00BB \0020";
+}
+
+/*
++--------------------------------------------------------------------------
+|	product specific styles
++--------------------------------------------------------------------------
+*/
+#content #page #product {
+	background:url(images/prod_content_bg.png) top left repeat-y;
+	width:960px;
+	margin:0;
+	padding:0;
+	float:left;
+	clear:both; 
+}
+#content #page #product .product_info {
+	color:#000;
+	width:480px;
+	margin:0 10px 10px 0;
+	padding:10px;
+	float:left;
+}
+#content #page #product .product_photos {
+	color:#000;
+	width:450px;
+	margin:0 0 10px 0;
+	padding:0;
+	float:right;
+}
+#content #page #product .product_photos .main_photo {
+	clear:both;
+}
+
+#content #videosec {
+	clear:both;
+}
+
+/*
++--------------------------------------------------------------------------
+|	product category
++--------------------------------------------------------------------------
+*/
+#content #page #details .product_border {
+	width:300px;
+	height:375px;
+	margin:0 8px 0 5px;
+	float:left;
+	/*border:1px solid #e1e1e1;*/
+}
+#content #page #details .product_border span.smallTxt {
+	font-size: 12px;
+	font-style: italic;
+}
+
+/*
++--------------------------------------------------------------------------
+|	page details styles
++--------------------------------------------------------------------------
+*/
+#content #page #details {
+	background:#FFF;
+	width:940px;
+	margin:0;
+	padding:10px;
+	float:left;
+	clear:both;
+}
+#content #page #details a {
+	color:#666;
+	text-decoration:none;
+}
+#content #page #details a:hover {
+	color:#999;
+	text-decoration:none;
+}
+
+
+/*
++--------------------------------------------------------------------------
+|	footer
++--------------------------------------------------------------------------
+*/ 
+.push { height:75px; clear: both; }
+#footer_bg {
+	background:url(images/footer_bg.png) left bottom repeat-x;
+	height: 75px;
+	margin: 0;
+	clear:both; 
+}
+#footer {
+	color: #000;
+	height: 75px;
+	width:960px;
+	position:relative;
+	left:50%;
+	margin-left:-480px;
+	padding: 0px;
+	clear:both;
+}
+
+#footer .copyright {
+	padding:30px 0 0 15px;
+	float:left;
+}
+#footer .links {
+	padding:30px 0 0 15px;
+	float:right;
+}
+#footer .links ul.footer_menu {
+	padding:0;
+	list-style-type: none;
+	text-align: center;
+	float:right;
+}
+#footer .links ul.footer_menu li {
+	display: inline;
+	list-style-type: none;
+	margin: 0 0 0 4px;
+	padding:0;
+}
+#footer .links ul.footer_menu li:after {
+	padding:0 0px 0 5px;
+	content: '\2022'; /* Bullet is \2022 */
+}
+#footer .links ul.footer_menu li.last:after {
+	padding:0 0px 0 5px;
+	content: "";
+}
+#footer .links ul.footer_menu li a {
+	text-decoration: none;
+	padding: 0px 3px 0px 0px;
+	margin:0;
+	background:none;
+	color:#333;
+	text-decoration:none;
+}
+#footer .links ul.footer_menu li a:hover {
+	color:#666;
+	text-decoration:none;
+}
+
+
+/*
++--------------------------------------------------------------------------
+|	helper classes (clear, floating, link fill, etc)
++--------------------------------------------------------------------------
+*/
+.clear { clear:both; }
+.linkFill {
+	background:none;
+	width:100%;
+	height:100%;
+	display:block;
+	outline:none;
+}
+.linkFill:hover { cursor:pointer; }
+
+
+.border_bottom {
+	border-bottom:1px solid #ccc;
+	margin:0 0 10px 0;
+	padding:10px 0 0 0;
+	clear:both;
+}
+.border_top {
+	border-top:1px solid #ccc;
+	margin:10px 0 10px 0;
+}
+.border_left {
+	border-left:1px solid #ccc;
+}
+.border_right {
+	border-right:1px solid #ccc;
+}
+
+.pic_border {
+	background:#FFF;
+	padding:5px;
+	border:1px solid #e1e1e1;
+}
+.pic_border:hover {
+	border:1px solid #999;
+}
+
+.pic_border2 {
+	background:#B64233;
+	padding:5px;
+	/*border:1px solid #e1e1e1;*/
+}
+.pic_border2:hover {
+	background:#802416;
+}
+
+.pr {
+	border-left: 3px solid #999;
+	padding:15px;
+	margin:0 0 10px 0;
+}
+
+.large_letter {
+	float:left; 
+	margin: 0 3px 0 0; 
+	font:normal 40px 'TeXGyreAdventorBold', Helvetica, Geneva, sans-serif;
+	line-height:20px;
+}
+
+.pic_left {
+	float:left;
+	margin-right:10px;
+}
+.pic_right {
+	float:right;
+	margin-left:10px;
+}
+
+.email {
+	float:left;
+}
+.snail_mail {
+	float:left;
+	width:300px;
+	margin-left:65px;
+	font-size:25px;
+	line-height:27px;
+}
+
+/*
++--------------------------------------------------------------------------
+|	jQuery jCarousel Styles
++--------------------------------------------------------------------------
+*/.jcarousel-skin-schiller .jcarousel-container {
+    background: #FFF;
+}
+
+.jcarousel-skin-schiller .jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.jcarousel-skin-schiller .jcarousel-container-horizontal {
+    width: 390px;
+    padding: 20px 30px;
+}
+
+.jcarousel-skin-schiller .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-schiller .jcarousel-clip-horizontal {
+    width:  390px;
+    height: 100px;
+}
+
+.jcarousel-skin-schiller .jcarousel-item {
+    width: 100px;
+    height: 100px;
+}
+
+.jcarousel-skin-schiller .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 10px;
+}
+
+.jcarousel-skin-schiller .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+    margin-right: 0;
+}
+
+.jcarousel-skin-schiller .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin-schiller .jcarousel-next-horizontal {
+    position: absolute;
+    top: 45px;
+    right: 5px;
+    width: 25px;
+    height: 45px;
+    cursor: pointer;
+    background: transparent url(images/carousel-next-horizontal.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-schiller .jcarousel-direction-rtl .jcarousel-next-horizontal {
+    left: 5px;
+    right: auto;
+    background-image: url(images/carousel-prev-horizontal.png);
+}
+
+.jcarousel-skin-schiller .jcarousel-next-horizontal:hover,
+.jcarousel-skin-schiller .jcarousel-next-horizontal:focus {
+    background-position: -26px 0;
+}
+
+.jcarousel-skin-schiller .jcarousel-next-horizontal:active {
+    background-position: -53px 0;
+}
+
+.jcarousel-skin-schiller .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-schiller .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-schiller .jcarousel-next-disabled-horizontal:focus,
+.jcarousel-skin-schiller .jcarousel-next-disabled-horizontal:active {
+    cursor: default;
+    background-position: -78px 0;
+}
+
+.jcarousel-skin-schiller .jcarousel-prev-horizontal {
+    position: absolute;
+    top: 45px;
+    left: 5px;
+    width: 25px;
+    height: 45px;
+    cursor: pointer;
+    background: transparent url(images/carousel-prev-horizontal.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-schiller .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+    left: auto;
+    right: 5px;
+    background-image: url(images/carousel-next-horizontal.png);
+}
+
+.jcarousel-skin-schiller .jcarousel-prev-horizontal:hover, 
+.jcarousel-skin-schiller .jcarousel-prev-horizontal:focus {
+    background-position: -26px 0;
+}
+
+.jcarousel-skin-schiller .jcarousel-prev-horizontal:active {
+    background-position: -53px 0;
+}
+
+.jcarousel-skin-schiller .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-schiller .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-schiller .jcarousel-prev-disabled-horizontal:focus,
+.jcarousel-skin-schiller .jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+    background-position: -78px 0;
+}
+
+
+
+/*** COLORBOX ***/
+/*
+    ColorBox Core Style
+    The following rules are the styles that are consistant between themes.
+    Avoid changing this area to maintain compatability with future versions of ColorBox.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:9999;
+	overflow:hidden;
+}
+#cboxOverlay {
+	position:fixed;
+	width:100%;
+	height:100%;
+}
+#cboxMiddleLeft, #cboxBottomLeft {
+	clear:left;
+}
+#cboxContent {
+	position:relative;
+	overflow:hidden;
+}
+#cboxLoadedContent {
+	overflow:auto;
+}
+#cboxLoadedContent iframe {
+	display:block;
+	width:100%;
+	height:100%;
+	border:0;
+}
+#cboxTitle {
+	margin:0;
+}
+#cboxLoadingOverlay, #cboxLoadingGraphic {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {
+	cursor:pointer;
+}
+/* 
+    Example user style
+    The following rules are ordered and tabbed in a way that represents the
+    order/nesting of the generated HTML, so that the structure easier to understand.
+*/
+#cboxOverlay {
+	background:url(images/colorbox/overlay.png) 0 0 repeat;
+}
+#colorbox {
+}
+#cboxTopLeft {
+	width:21px;
+	height:21px;
+	background:url(images/colorbox/controls.png) -100px 0 no-repeat;
+}
+#cboxTopRight {
+	width:21px;
+	height:21px;
+	background:url(images/colorbox/controls.png) -129px 0 no-repeat;
+}
+#cboxBottomLeft {
+	width:21px;
+	height:21px;
+	background:url(images/colorbox/controls.png) -100px -29px no-repeat;
+}
+#cboxBottomRight {
+	width:21px;
+	height:21px;
+	background:url(images/colorbox/controls.png) -129px -29px no-repeat;
+}
+#cboxMiddleLeft {
+	width:21px;
+	background:url(images/colorbox/controls.png) left top repeat-y;
+}
+#cboxMiddleRight {
+	width:21px;
+	background:url(images/colorbox/controls.png) right top repeat-y;
+}
+#cboxTopCenter {
+	height:21px;
+	background:url(images/colorbox/border.png) 0 0 repeat-x;
+}
+#cboxBottomCenter {
+	height:21px;
+	background:url(images/colorbox/border.png) 0 -29px repeat-x;
+}
+#cboxContent {
+	background:#fff;
+}
+#cboxLoadedContent {
+	margin-bottom:28px;
+}
+#cboxTitle {
+	position:absolute;
+	bottom:4px;
+	left:0;
+	text-align:center;
+	width:100%;
+	color:#949494;
+}
+#cboxCurrent {
+	position:absolute;
+	bottom:4px;
+	left:58px;
+	color:#949494;
+}
+#cboxSlideshow {
+	position:absolute;
+	bottom:4px;
+	right:30px;
+	color:#0092ef;
+}
+#cboxPrevious {
+	position:absolute;
+	bottom:0;
+	left:0px;
+	background:url(images/colorbox/controls.png) -75px 0px no-repeat;
+	width:25px;
+	height:25px;
+	text-indent:-9999px;
+}
+#cboxPrevious.hover {
+	background-position:-75px -25px;
+}
+#cboxNext {
+	position:absolute;
+	bottom:0;
+	left:27px;
+	background:url(images/colorbox/controls.png) -50px 0px no-repeat;
+	width:25px;
+	height:25px;
+	text-indent:-9999px;
+}
+#cboxNext.hover {
+	background-position:-50px -25px;
+}
+#cboxLoadingOverlay {
+	background:url(images/colorbox/loading_background.png) center center no-repeat;
+}
+#cboxLoadingGraphic {
+	background:url(images/colorbox/loading.gif) center center no-repeat;
+}
+#cboxClose {
+	position:absolute;
+	bottom:0;
+	right:0;
+	background:url(images/colorbox/controls.png) -25px 0px no-repeat;
+	width:25px;
+	height:25px;
+	text-indent:-9999px;
+}
+#cboxClose.hover {
+	background-position:-25px -25px;
+}
+/*
+    The following fixes png-transparency for IE6.  
+    It is also necessary for png-transparency in IE7 & IE8 to avoid 'black halos' with the fade transition
+    
+    Since this method does not support CSS background-positioning, it is incompatible with CSS sprites.
+    Colorbox preloads navigation hover classes to account for this.
+    
+    !! Important Note: AlphaImageLoader src paths are relative to the HTML document,
+    while regular CSS background images are relative to the CSS document.
+*/
+.cboxIE #cboxTopLeft {
+	background:transparent;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/colorbox/internet_explorer/borderTopLeft.png, sizingMethod='scale');
+}
+.cboxIE #cboxTopCenter {
+	background:transparent;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/colorbox/internet_explorer/borderTopCenter.png, sizingMethod='scale');
+}
+.cboxIE #cboxTopRight {
+	background:transparent;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/colorbox/internet_explorer/borderTopRight.png, sizingMethod='scale');
+}
+.cboxIE #cboxBottomLeft {
+	background:transparent;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/colorbox/internet_explorer/borderBottomLeft.png, sizingMethod='scale');
+}
+.cboxIE #cboxBottomCenter {
+	background:transparent;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/colorbox/internet_explorer/borderBottomCenter.png, sizingMethod='scale');
+}
+.cboxIE #cboxBottomRight {
+	background:transparent;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/colorbox/internet_explorer/borderBottomRight.png, sizingMethod='scale');
+}
+.cboxIE #cboxMiddleLeft {
+	background:transparent;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/colorbox/internet_explorer/borderMiddleLeft.png, sizingMethod='scale');
+}
+.cboxIE #cboxMiddleRight {
+	background:transparent;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/colorbox/internet_explorer/borderMiddleRight.png, sizingMethod='scale');
+}
+/*** BAD BROWSER ***/
+#browserWarning {
+	background: #0F0;
+	color:#000;
+	width: 100%;
+	border: solid 1px #0C0;
+	text-align: center;
+	padding:15px 0px 15px 0px;
+	xmargin-top:-15px;
+}
+#browserWarning a {
+	color:#000;
+	text-decoration:underline;
+}
+#browserWarning a:hover {
+	color:#333;
+	text-decoration:none;
+}

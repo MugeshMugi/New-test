@@ -1,0 +1,62 @@
+<div class="wrap"><center><h1>ULTIMATE VIDEO</h1>
+<H3>
+by extendyourweb.com</H3><br /><a href="http://www.extendyourweb.com/product/media-plugins-pack/">Download more plugins</a>
+ <a href="http://www.extendyourweb.com/product/ultimate-pro-video-gallery/">Download ULTIMATE FULL VERSION</a></center>
+ <br/>
+	<form method="post" action="">
+    
+    <h2>CREATE NEW VIDEO GALLERY</h2>            
+
+
+<h3>GALLERY SIZES</h3>
+           <label>Plugin width(number with px or %): </label> <input type='text' id='width'  name='width'  value='100%' size="6"/>
+            
+       		<label>Plugin height(number): </label> <input type='text' id='height'  name='height'  value='500' size="6"/>
+            
+            <br/>  
+<h3>THUMBNAILS</h3>
+
+<label> % Height reserved for the video thumbnails into the plugin. The remaining space will be used for the player(number): </label> <input type='text' id='number_thumbnails'  name='number_thumbnails'  value='50' size="6"/><br/><br/>
+
+            <label>Thumbnail columns(number): </label> <input type='text' id='twidth'  name='twidth'  value='2' size="6"/>
+            <input type='hidden' id='theight'  name='theight'  value='1' size="6"/>
+
+<h3>DESIGN</h3>
+                   <label>Thumbnail text design options</label>
+			      <select name="sizethumbnail" id="sizethumbnail">
+			        <option value="0" <?php if($sizethumbnail==0 || $skin=="") echo ' selected="selected"'; ?>>All width</option>
+			        <option value="1" <?php if($sizethumbnail==1) echo ' selected="selected"'; ?>>1/2 width, right</option>
+			        <option value="2" <?php if($sizethumbnail==2) echo ' selected="selected"'; ?>>1/2 width, left</option>
+                    <option value="3" <?php if($sizethumbnail==3) echo ' selected="selected"'; ?>>1/2 height</option>
+
+		          </select>           
+                  
+                  
+                    <label>Image thumbnail design options</label>
+			      <select name="op1" id="op1">
+			        <option value="0" <?php if($op1==0 || $op1=="") echo ' selected="selected"'; ?>>All width, all height</option>
+                     <option value="3" <?php if($op1==3) echo ' selected="selected"'; ?>>1/2 height</option>
+			        <option value="1" <?php if($op1==1) echo ' selected="selected"'; ?>>1/2 width, left</option>
+                     <option value="2" <?php if($op1==2) echo ' selected="selected"'; ?>>1/2 width, right</option>
+			       
+
+		          </select> <BR/><BR/>
+              <input type='hidden' value="000000" name="color1" id="color1" size="7" />
+                  
+      <input type='hidden' id='color2'  name='color2'  value='FFFFFF' size="7"/>
+            
+       <input type='hidden' id='color3'  name='color3'  value='ffffff' size="7" />
+            
+      <input type='hidden' id='time'  name='time'  value='777777' size="7" />
+            
+          <input type='hidden' id='op4'  name='op4'  value='000000' size="7" />
+                   
+          
+
+	  <input name="crear" type="hidden" id="crear" value="1">
+     <input type='submit' name='' value='Create New VIDEO GALLERY' class="button-primary"/>
+    </form>
+   
+<hr>
+
+<H2>VIDEO GALLERIES</H2>
